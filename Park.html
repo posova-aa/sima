@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="windows-1251">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Den' pobedy">
+    <meta name="description" content="Den' pobedy">
+    
+    <title>Park pobedy</title>
+    
+        <style type="text/css">
+  /* Базовые стили слоя, затемнения и модального окна */
+.overlay {
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 10;
+display: none;
+/* фон затемнения */
+background-color: rgba(0, 0, 0, 0.65);
+position: fixed; /* фиксированное позиционирование */
+cursor: default; /* тип курсора */
+}
+ 
+/* активируем слой затемнения */
+.overlay:target {
+display: block;
+}
+ 
+/* стили модального окна */
+.popup {
+top: -100%;
+right: 0;
+left: 50%;
+font-size: 14px;
+z-index: 20;
+margin: 0;
+width: 85%;
+min-width: 320px;
+max-width: 600px;
+/* фиксированное позиционирование, окно стабильно при прокрутке */
+position: fixed;
+padding: 15px;
+border: 1px solid #383838;
+background: #fefefe;
+/* скругление углов */
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+border-radius: 4px;
+font: 14px/18px 'Tahoma', Arial, sans-serif;
+/* внешняя тень */
+-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-webkit-transform: translate(-50%, -500%);
+-ms-transform: translate(-50%, -500%);
+-o-transform: translate(-50%, -500%);
+transform: translate(-50%, -500%);
+-webkit-transition: -webkit-transform 0.6s ease-out;
+-moz-transition: -moz-transform 0.6s ease-out;
+-o-transition: -o-transform 0.6s ease-out;
+transition: transform 0.6s ease-out;
+}
+ 
+/* активируем модальный блок */
+.overlay:target+.popup {
+-webkit-transform: translate(-50%, 0);
+-ms-transform: translate(-50%, 0);
+-o-transform: translate(-50%, 0);
+transform: translate(-50%, 0);
+top: 20%;
+}
+ 
+/* формируем кнопку закрытия */
+.close {
+top: -10px;
+right: -10px;
+width: 20px;
+height: 20px;
+position: absolute;
+padding: 0;
+border: 2px solid #ccc;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+border-radius: 15px;
+background-color: rgba(61, 61, 61, 0.8);
+-webkit-box-shadow: 0px 0px 10px #000;
+-moz-box-shadow: 0px 0px 10px #000;
+box-shadow: 0px 0px 10px #000;
+text-align: center;
+text-decoration: none;
+font: 10px/15px 'Tahoma', Arial, sans-serif;
+font-weight: bold;
+-webkit-transition: all ease .8s;
+-moz-transition: all ease .8s;
+-ms-transition: all ease .8s;
+-o-transition: all ease .8s;
+transition: all ease .8s;
+}
+ 
+.close:before {
+color: rgba(255, 255, 255, 0.9);
+content: "X";
+text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+font-size: 12px;
+}
+ 
+.close:hover {
+background-color: rgba(252, 20, 0, 0.8);
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+    body {
+            background-color: #525252;
+          }
+		  
+		  table {
+	margin: auto;  
+	border-collapse:   collapse;
+    border: 0px solid black;
+    border-color: #008000;
+    width: 782px;
+    height: 551px;
+    border-spacing: 0;
+	  	}
+		img {
+    margin-left: 0px;
+    margin-right: 0px;
+	padding: 0px;
+	display: block;
+    }
+	A img {
+	border : 0px;
+	}
+
+	td {border: 1px;
+	border-collapse:   collapse;
+	border: 0px solid black;
+	padding: 0px;
+	border-spacing: 0;}
+	P.H {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : Red;
+	font-size : 22px;
+	font-weight : bold;
+	text-align : center;
+    }
+	
+	P.pp {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : Red;
+	font-size : 15px;
+	font-weight : bold;
+	text-align : center;
+    }
+	
+    a  { 
+    border: 0px solid black;
+	color:#008000; }
+    a:visited { color:#008000; }
+    a:hover { color:#008000; }
+    a:active { color:#99CC00; }
+	
+    img.img1 { margin: 10px; }
+    </style>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <a href="index.html"><p class="H">ПАМЯТНЫЕ МЕСТА МОСКОВСКОГО ПАРКА ПОБЕДЫ</p></a>
+ <table>
+	<tr>
+		<td colspan="16">
+			<img src="images1/Park_01.jpg" width="877" height="207" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="207" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="15">
+			<img src="images1/Park_02.jpg" width="284" height="343" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<a href="#" title="Памятник А. М. Матросову"><img src="images1/Park_03.jpg" width="23" height="20" alt=""></a></td>
+		<td colspan="13">
+			<img src="images1/Park_04.jpg" width="570" height="2" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="2" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="3">
+			<img src="images1/Park_05.jpg" width="23" height="22" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<img src="images1/Park_06.jpg" width="21" height="20" alt=""></td>
+		<td colspan="8" rowspan="3">
+			<img src="images1/Park_07.jpg" width="526" height="22" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="18" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="2">
+			<img src="images1/Park_08.jpg" width="23" height="4" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="2" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="images1/Park_09.jpg" width="21" height="2" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="2" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="11">
+			<img src="images1/Park_10.jpg" width="14" height="319" alt=""></td>
+		<td colspan="3" rowspan="2">
+			<a href="#" title="Памятник В. М. Голубеву"><img src="images1/Park_11.jpg" width="20" height="19" alt=""></a></td>
+		<td colspan="2" rowspan="2">
+			<a href="#" title="Памятник С. И. Богданову"><img src="images1/Park_12.jpg" width="18" height="19" alt=""></a></td>
+		<td colspan="2" rowspan="2">
+			<a href="#" title="Памятник Е. П. Федорову"><img src="images1/Park_13.jpg" width="20" height="19" alt=""></a></td>
+		<td colspan="7">
+			<img src="images1/Park_14.jpg" width="521" height="4" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="4" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="4" rowspan="6">
+			<img src="images1/Park_15.jpg" width="78" height="152" alt=""></td>
+		<td colspan="2" rowspan="2">
+			<a href="#win12" title="Памяник маршалу Жукову"><img src="images1/Park_16.jpg" width="22" height="21" alt=""></a></td>
+		<td rowspan="10">
+			<img src="images1/Park_17.jpg" width="421" height="315" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="15" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="2">
+			<a href="#" title="Памятник В. Н. Осипову"><img src="images1/Park_18.jpg" width="20" height="15" alt=""></a></td>
+		<td colspan="2" rowspan="2">
+			<a href="#" title="Памятник Н. В. Челнокову"><img src="images1/Park_19.jpg" width="18" height="15" alt=""></a></td>
+		<td colspan="2" rowspan="3">
+			<a href="#" title="Памятник В. И. Ракову"><img src="images1/Park_20.jpg" width="20" height="16" alt=""></a></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="6" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="6">
+			<img src="images1/Park_21.jpg" width="22" height="159" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="9" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="images1/Park_22.jpg" width="16" height="1" alt=""></td>
+		<td colspan="3" rowspan="2">
+			<a href="#" title="Памятник З. А. Космодемьянской"><img src="images1/Park_23.jpg" width="22" height="21" alt=""></a></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="1" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" rowspan="6">
+			<img src="images1/Park_24.jpg" width="16" height="284" alt=""></td>
+		<td colspan="2" rowspan="6">
+			<img src="images1/Park_25.jpg" width="20" height="284" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="20" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="5">
+			<img src="images1/Park_26.jpg" width="22" height="264" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="101" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="4">
+			<img src="images1/Park_27.jpg" width="33" height="163" alt=""></td>
+		<td>
+			<a href="#win13" title="Вагонетка Кирпично-пемзового завода"><img src="images1/Park_28.jpg" width="21" height="21" alt=""></a></td>
+		<td colspan="2" rowspan="2">
+			<img src="images1/Park_29.jpg" width="24" height="28" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="21" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="3">
+			<img src="images1/Park_30.jpg" width="21" height="142" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="7" alt=""></td>
+	</tr>
+	<tr>
+		<td rowspan="2">
+			<img src="images1/Park_31.jpg" width="8" height="135" alt=""></td>
+		<td colspan="2">
+			<a href="#win11" title="Памятник жертвам блокады Ленинграда "><img src="images1/Park_32.jpg" width="21" height="21" alt=""></a></td>
+		<td rowspan="2">
+			<img src="images1/Park_33.jpg" width="17" height="135" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="21" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<img src="images1/Park_34.jpg" width="21" height="114" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="1" height="114" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images1/spacer.gif" width="284" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="14" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="9" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="7" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="4" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="12" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="6" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="15" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="5" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="33" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="21" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="8" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="16" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="5" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="17" height="1" alt=""></td>
+		<td>
+			<img src="images1/spacer.gif" width="421" height="1" alt=""></td>
+		<td></td>
+	</tr>
+	<!-- Памятник жертвам блокады Ленинграда-->
+<A id=win11 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class="img1" border="0" alt="" align="left" src="images/10.jpg" width="300" height="224">
+<p class="pp">Памятник жертвам блокады Ленинграда</P>
+<p>Памятник открыт 25 января 1995 г. В годы блокады Ленинграда в печах кирпичного завода, находившегося на территории юго-западной части будущего Московского парка Победы, сжигали умерших ленинградцев.</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<!-- Жуков-->
+<A id=win12 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class="img1" border="0" alt="" align="left" src="images/11.jpg" width="300" height="225">
+<p class="pp">Памятник маршалу Жукову</P>
+<p>В мае 1995 года был установлен памятник из бронзы Г.К. Жукову - маршалу Советского Союза, четырежды Герою Советского Союза.</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<!-- Вагонетка-->
+<A id=win13 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class="img1" border="0" alt="" align="left" src="images/12.jpg" width="300" height="225">
+<p class="pp">Вагонетка Кирпично-пемзового завода №1</P>
+<p>В годы блокады Ленинграда, когда кирпичный завод использовался в качестве крематория, тела умерших на вагонетках отправляли в туннельные печи завода.</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+</table>
+  </body>
+</html>

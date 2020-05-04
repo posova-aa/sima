@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="windows-1251">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Den' pobedy">
+    <meta name="description" content="Den' pobedy">
+    
+    <title>Den' pobedy</title>
+    
+    <style type="text/css">
+  /* Базовые стили слоя, затемнения и модального окна */
+.overlay {
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 10;
+display: none;
+/* фон затемнения */
+background-color: rgba(0, 0, 0, 0.65);
+position: fixed; /* фиксированное позиционирование */
+cursor: default; /* тип курсора */
+}
+ 
+/* активируем слой затемнения */
+.overlay:target {
+display: block;
+}
+ 
+/* стили модального окна */
+.popup {
+top: -100%;
+right: 0;
+left: 50%;
+font-size: 14px;
+z-index: 20;
+margin: 0;
+width: 85%;
+min-width: 320px;
+max-width: 600px;
+/* фиксированное позиционирование, окно стабильно при прокрутке */
+position: fixed;
+padding: 15px;
+border: 1px solid #383838;
+background: #fefefe;
+/* скругление углов */
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+border-radius: 4px;
+font: 14px/18px 'Tahoma', Arial, sans-serif;
+/* внешняя тень */
+-webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+-webkit-transform: translate(-50%, -500%);
+-ms-transform: translate(-50%, -500%);
+-o-transform: translate(-50%, -500%);
+transform: translate(-50%, -500%);
+-webkit-transition: -webkit-transform 0.6s ease-out;
+-moz-transition: -moz-transform 0.6s ease-out;
+-o-transition: -o-transform 0.6s ease-out;
+transition: transform 0.6s ease-out;
+}
+ 
+/* активируем модальный блок */
+.overlay:target+.popup {
+-webkit-transform: translate(-50%, 0);
+-ms-transform: translate(-50%, 0);
+-o-transform: translate(-50%, 0);
+transform: translate(-50%, 0);
+top: 20%;
+}
+ 
+/* формируем кнопку закрытия */
+.close {
+top: -10px;
+right: -10px;
+width: 20px;
+height: 20px;
+position: absolute;
+padding: 0;
+border: 2px solid #ccc;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+-ms-border-radius: 15px;
+-o-border-radius: 15px;
+border-radius: 15px;
+background-color: rgba(61, 61, 61, 0.8);
+-webkit-box-shadow: 0px 0px 10px #000;
+-moz-box-shadow: 0px 0px 10px #000;
+box-shadow: 0px 0px 10px #000;
+text-align: center;
+text-decoration: none;
+font: 10px/15px 'Tahoma', Arial, sans-serif;
+font-weight: bold;
+-webkit-transition: all ease .8s;
+-moz-transition: all ease .8s;
+-ms-transition: all ease .8s;
+-o-transition: all ease .8s;
+transition: all ease .8s;
+}
+ 
+.close:before {
+color: rgba(255, 255, 255, 0.9);
+content: "X";
+text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+font-size: 12px;
+}
+ 
+.close:hover {
+background-color: rgba(252, 20, 0, 0.8);
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-ms-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+}
+    body {
+            background-color: #525252;
+          }
+		  
+		  table {
+	margin: auto;  
+	border-collapse:   collapse;
+    border: 0px solid black;
+    border-color: #008000;
+    width: 782px;
+    height: 551px;
+    border-spacing: 0;
+	  	}
+		img {
+    margin-left: 0px;
+    margin-right: 0px;
+	padding: 0px;
+	display: block;
+    }
+	A img {
+	border : 0px;
+	}
+
+	td {border: 1px;
+	border-collapse:   collapse;
+	border: 0px solid black;
+	padding: 0px;
+	border-spacing: 0;}
+	P.H {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : Red;
+	font-size : 22px;
+	font-weight : bold;
+	text-align : center;
+    }
+	
+	P.pp {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : Red;
+	font-size : 15px;
+	font-weight : bold;
+	text-align : center;
+    }
+	
+    a  { 
+    border: 0px solid black;
+	color:#008000; }
+    a:visited { color:#008000; }
+    a:hover { color:#008000; }
+    a:active { color:#99CC00; }
+	
+    img.img1 { margin: 10px; }
+    </style>
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  <p class="H">ПАМЯТНЫЕ МЕСТА МОСКОВСКОГО Р-НА САНКТ-ПЕТЕРБУРГА</P>
+ <table>
+	<tr>
+		<td colspan="27">
+			<IMG alt="" src="images/moskovskiy_01.jpg" width=781 height=60></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=60></TD></TR>
+	<tr>
+		<td colspan="3" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_02.jpg" width=617 height=29></TD>
+		<td colspan="6">
+			<A title ="Грузовой трамвайный парк" href="#win1"  a><IMG alt="" src="images/moskovskiy_03.jpg" width=22 height=24></A></TD>
+		<td colspan="18" rowspan="3">
+			<IMG alt="" src="images/moskovskiy_04.jpg" width=142 height=45></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=24></TD></TR>
+	<tr>
+		<td colspan="6">
+			<IMG alt="" src="images/moskovskiy_05.jpg" width=22 height=5></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=5></TD></TR>
+	<tr>
+		<td colspan="2" rowspan="18">
+			<IMG alt="" src="images/moskovskiy_06.jpg" width=616 height=236></TD>
+		<td colspan="6">
+			<A title="Театр Сказки" href="#win2" ><IMG alt="" src="images/moskovskiy_07.jpg" width=22 height=16></A></TD>
+		<td>
+			<IMG alt="" src="images/moskovskiy_08.jpg" width=1 height=16></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=16></TD></TR>
+	<tr>
+		<td colspan="5">
+			<A title="Театр Сказки" href="#win2" ><IMG alt="" src="images/moskovskiy_09.jpg" width=20 height=5></A></TD>
+		<td colspan="5" rowspan="2">
+			<A title="В годы войны здесь располагалась школа №356" href="#win3" ><IMG alt="" src="images/moskovskiy_10.jpg" width=19 height=23></A></TD>
+		<td colspan="15" rowspan="4">
+			<IMG alt="" src="images/moskovskiy_11.jpg" width=126 height=94></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=5></TD></TR>
+	<tr>
+		<td colspan="5" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_12.jpg" width=20 height=26></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=18></TD></TR>
+	<tr>
+		<td>
+			<IMG alt="" src="images/moskovskiy_13.jpg" width=2 height=8></TD>
+		<td colspan="4" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_14.jpg" width=17 height=71></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=8></TD></TR>
+	<tr>
+		<td colspan="6">
+			<IMG alt="" src="images/moskovskiy_15.jpg" width=22 height=63></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=63></TD></TR>
+	<tr>
+		<td colspan="4" rowspan="11">
+			<IMG alt="" src="images/moskovskiy_16.jpg" width=16 height=114></TD>
+		<td colspan="11">
+			<A href="Park.html" target="_blank" title="Московский парк Победы"><IMG alt="" src="images/moskovskiy_17.jpg" width=39 height=40>
+      </A></TD>
+		<td colspan="10" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_18.jpg" width=110 height=48></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=40></TD></TR>
+	<tr>
+		<td colspan="11">
+			<IMG alt="" src="images/moskovskiy_19.jpg" width=39 height=8></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=8></TD></TR>
+	<tr>
+		<td colspan="9">
+			<IMG alt="" src="images/moskovskiy_20.jpg" width=29 height=14></TD>
+		<td colspan="4">
+			<A title="Пулеметный ДОТ" href="#win5" ><IMG alt="" src="images/moskovskiy_21.jpg" width=21 height=14></A></TD>
+		<td colspan="8" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_22.jpg" width=99 height=20></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=14></TD></TR>
+	<tr>
+		<td colspan="4" rowspan="6">
+			<IMG alt="" src="images/moskovskiy_23.jpg" width=11 height=32></TD>
+		<td colspan="6" rowspan="3">
+			<A title="Чесменское кладбище" href="#win4" ><IMG alt="" src="images/moskovskiy_24.jpg" width=20 height=23></A></TD>
+		<td colspan="3">
+			<A title="Пулеметный ДОТ" href="#win5" ><IMG alt="" src="images/moskovskiy_25.jpg" width=19 height=6></A></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=6></TD></TR>
+	<tr>
+		<td colspan="2">
+			<IMG alt="" src="images/moskovskiy_26.jpg" width=17 height=2></TD>
+		<td colspan="4" rowspan="4">
+			<A title=ДОТ href="#"><IMG alt="" src="images/moskovskiy_27.jpg" width=24 height=22></A></TD>
+		<td colspan="5" rowspan="3">
+			<IMG alt="" src="images/moskovskiy_28.jpg" width=77 height=20></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=2></TD></TR>
+	<tr>
+		<td colspan="2" rowspan="9">
+			<IMG alt="" src="images/moskovskiy_29.jpg" width=17 height=69></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=15></TD></TR>
+	<tr>
+		<td colspan="6" rowspan="3">
+			<IMG alt="" src="images/moskovskiy_30.jpg" width=20 height=9></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=3></TD></TR>
+	<tr>
+		<td rowspan="2">
+			<IMG alt="" src="images/moskovskiy_31.jpg" width=3 height=6></TD>
+		<td colspan="3" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_32.jpg" width=22 height=6></TD>
+		<td rowspan="17">
+			<IMG alt="" src="images/moskovskiy_33.jpg" width=52 height=263></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=2></TD></TR>
+	<tr>
+		<td colspan="4">
+			<IMG alt="" src="images/moskovskiy_34.jpg" width=24 height=4></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=4></TD></TR>
+	<tr>
+		<td colspan="6" rowspan="2">
+			<A title="Артиллерийский ДОТ" href="#win6" ><IMG alt="" src="images/moskovskiy_35.jpg" width=23 height=20></A></TD>
+		<td colspan="4" rowspan="5">
+			<IMG alt="" src="images/moskovskiy_36.jpg" width=8 height=45></TD>
+		<td colspan="2" rowspan="15">
+			<IMG alt="" src="images/moskovskiy_37.jpg" width=4 height=257></TD>
+		<td colspan="4" rowspan="3">
+			<A title=ДОТ href="#"><IMG alt="" src="images/moskovskiy_38.jpg" width=25 height=22></A></TD>
+		<td colspan="2">
+			<A title="Пулеметный ДОТ" href="#" ><IMG alt="" src="images/moskovskiy_39.jpg" width=20 height=18></A></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=18></TD></TR>
+	<tr>
+		<td colspan="2" rowspan="11">
+			<IMG alt="" src="images/moskovskiy_40.jpg" width=20 height=84></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=2></TD></TR>
+	<tr>
+		<td colspan="2" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_41.jpg" width=9 height=12></TD>
+		<td colspan="8" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_42.jpg" width=30 height=12></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=2></TD></TR>
+	<tr>
+		<td colspan="4" rowspan="9">
+			<IMG alt="" src="images/moskovskiy_43.jpg" width=25 height=80></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=10></TD></TR>
+	<tr>
+		<td rowspan="11">
+			<IMG alt="" src="images/moskovskiy_44.jpg" width=605 height=225></TD>
+		<td colspan="4" rowspan="4">
+			<A title="Пулеметный ДОТ" href="#" ><IMG alt="" src="images/moskovskiy_45.jpg" width=22 height=25></A></TD>
+		<td colspan="7" rowspan="3">
+			<a href="#win10" title="Площадь Победы"><IMG alt="" src="images/moskovskiy_46.jpg" width=28 height=17></a></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=13></TD></TR>
+	<tr>
+		<td>
+			<IMG alt="" src="images/moskovskiy_47.jpg" width=4 height=3></TD>
+		<td colspan="4">
+			<IMG alt="" src="images/moskovskiy_48.jpg" width=12 height=3></TD>
+		<td rowspan="10">
+			<IMG alt="" src="images/moskovskiy_49.jpg" width=9 height=212></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=3></TD></TR>
+	<tr>
+		<td colspan="2" rowspan="4">
+			<IMG alt="" src="images/moskovskiy_50.jpg" width=5 height=20></TD>
+		<td colspan="3" rowspan="2">
+			<A title="Школа 356 (современное здание)" href="#" ><IMG alt="" src="images/moskovskiy_51.jpg" width=11 height=9></A></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=1></TD></TR>
+	<tr>
+		<td colspan="3" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_52.jpg" width=11 height=17></TD>
+		<td colspan="4" rowspan="3">
+			<A title="Артиллерийский ДОТ" href="#win7" ><IMG alt="" src="images/moskovskiy_53.jpg" width=17 height=19></A></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=8></TD></TR>
+	<tr>
+		<td colspan="4" rowspan="7">
+			<IMG alt="" src="images/moskovskiy_54.jpg" width=22 height=200></TD>
+		<td colspan="3" rowspan="7">
+			<IMG alt="" src="images/moskovskiy_55.jpg" width=11 height=200></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=9></TD></TR>
+	<tr>
+		<td rowspan="5">
+			<IMG alt="" src="images/moskovskiy_56.jpg" width=5 height=169></TD>
+		<td colspan="2" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_57.jpg" width=6 height=22></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=2></TD></TR>
+	<tr>
+		<td colspan="4">
+			<A title="Парк Городов-Героев" href="#win8" ><IMG alt="" src="images/moskovskiy_58.jpg" width=17 height=20></A></TD>
+		<td colspan="2" rowspan="5">
+			<IMG alt="" src="images/moskovskiy_59.jpg" width=5 height=189></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=20></TD></TR>
+	<tr>
+		<td colspan="6" rowspan="3">
+			<IMG alt="" src="images/moskovskiy_60.jpg" width=23 height=147></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=14></TD></TR>
+	<tr>
+		<td rowspan="3">
+			<IMG alt="" src="images/moskovskiy_61.jpg" width=15 height=155></TD>
+		<td colspan="4">
+			<A title="Памятник Спасибо за счастливое детство" href   ="#win9"><IMG alt="" src="images/moskovskiy_62.jpg" width=25 height=22></A></TD>
+		<td rowspan="3">
+			<IMG alt="" src="images/moskovskiy_63.jpg" width=5 height=155></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=22></TD></TR>
+	<tr>
+		<td colspan="4" rowspan="2">
+			<IMG alt="" src="images/moskovskiy_64.jpg" width=25 height=133></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=111></TD></TR>
+	<tr>
+		<td colspan="6">
+			<a href="#" title="Пулковский рубеж"><IMG alt="" src="images/moskovskiy_65.jpg" width=23 height=22></a></TD>
+		<td>
+			<IMG alt="" src="images/moskovskiy_66.jpg" width=5 height=22></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=22></TD></TR>
+	<tr>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=605 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=11 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=8 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=2 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=5 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=4 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=2 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=4 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=7 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=5 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=4 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=1 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=2 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=8 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=9 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=2 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=2 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=15 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=5 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=3 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=2 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=15 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=5 height=1></TD>
+		<td>
+			<IMG alt="" src="images/spacer.gif" width=52 height=1></TD>
+		<td></TD></TR></TABLE>
+<!-- Мемориальная доска Трамв. парк -->
+<A id=win1 class=overlay href="#x"></A>
+<div class="popup">
+<p class="pp">Трамвайный парк им. Е.&nbsp; И.&nbsp;Красуцкого<br>Московский пр., 77 </P2>
+<p>В годы блокады грузовой трамвай вновь стал основным видом 
+грузового транспорта в городе. В определённый момент все пассажирские перевозки 
+в городе прекратились, и лишь грузовой трамвай продолжал перевозить 
+продовольствие для населения и грузы для фронта. После снятия блокады появилась 
+возможность приступить к ремонту подвижного состава, чтобы предоставить весь 
+потенциал грузового трампарка для перевозок, необходимых для восстановления 
+города, пострадавшего от 900-дневных бомбёжек и обстрелов. Уже к началу 1946 
+года на линии ежедневно работали в среднем 42 трамвайных грузовых поезда, то 
+есть, трампарк практически вернул свои довоенные мощности. </P>
+<p>В 1995 г. здесь была установлена мемориальная доска: 
+«Подвигу трамвайщиков блокадного Ленинграда, 7-го марта 1942 г. из этого парка 
+вышли на линию первые грузовые трамвайные поезда»</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<!-- Театр Сказки -->
+<A id=win2 class=overlay href="#x"></A>
+<div class="popup">
+<p class="pp">Театр Сказки<br>Московский 
+пр., дом 121 </P2>
+<p>До войны на этом месте был Дом Пионеров, в котором 
+формировалась 2-я дивизия Народного ополчения, защищавшая Пулковские высоты. Об 
+этом событии нам рассказывает мемориальная доска. На доске надпись: «В этом 
+здании с 30 июня по 13 июля 1941 года формировалась 2-я дивизия Народного 
+ополчения, участвовавшая в обороне Ленинграда».</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<!-- Школа 356-->
+<A id=win3 class=overlay href="#x"></A>
+<div class="popup">
+<p class="pp">Школа 356 (старое здание)</P>
+<p>В дни блокады в Ленинграде работало всего 39 школ, среди 
+них была школа 356. Здание школы находилось на улице Заставской в доме 9 
+(сегодня это район дома №19 по Заставской улице). </P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<!-- Чесменская церковь-->
+<A id=win4 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class=img1 border=0 alt="" align=left src="images/1.jpg" width=250 height=187>
+<p class="pp">Чесменское кладбище и ДОТ №77</P>
+<p>Кладбище возникло в 1836 году рядом с Чесменской 
+церковью. Вначале на нём хоронили ветеранов русской армии. В годы войны зднсь 
+хоронили бойцов, отдавших свои жизни при обороне подступов к Ленинграду. В 
+центре кладбища установлен гранитный обелиск с надписью: «Доблестным советским 
+воинам, павшим в боях за свободу и независимость нашей Родины. 1941—1943» </P>
+<p>У церкви сохранился артиллерийский ДОТ. Одноамбразурный 
+артиллерийский полукапонир (АДОТ) № 77. Оборонительный рубеж "Ижора" (1943 
+г.)</P>
+<p>Музей Боевой Славы II Дивизии Народного Ополчения по 
+адресу ул. Гастелло д. 19 был открыт 4 мая 1979 года. Создание музея – это 
+заслуга Совета ветеранов 85 стрелковой дивизии (бывшей II Дивизии Народного 
+Ополчения)</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<!-- Чесменская церковь-->
+<A id=win5 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class=img1 border=0 alt="" align=left src="images/2.jpg" width=250 height=187>
+<p class="pp">Пулеметный ДОТ</P>
+<p>Пулеметный ДОТ - памятник на проспекте Ю.Гагарина.</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<DIV></DIV><!-- Артиллерийский ДОТ-->
+<A id=win6 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class=img1 border=0 alt="" align=left src="images/3.jpg" width=250 height=160>
+<p class="pp">Артиллерийский ДОТ</P>
+<p> На Московской площади у дома Советов.</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<DIV></DIV><!-- Артиллерийский ДОТ 2-->
+<A id=win7 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class=img1 border=0 alt="" align=left src="images/4.jpg" width=250 height=187>
+<p class="pp">Артиллерийский ДОТ</P>
+<p> Памятник у Средней рогатки</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<DIV></DIV><!-- Парк Городов-Героев-->
+<A id=win8 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class=img1 border=0 alt="" align=left src="images/5.jpg" width=300 height=227>
+<p class="pp">Парк Городов-Героев</P>
+<p>К югу от площади Победы на территории между лентами дорог 
+на Москву и на Киев в 1980-х гг. началось формирование парка Городов-Героев, 
+проект его создан известным архитектором-паркостроителем А. Г. Леляковым и 
+архитектором Е. Ф. Шаповаловой.</P>
+<p> Церковь св. Георгия Победоносца (архитекторы С. В. 
+Любимов, П. Л. Зыков, архитектурная мастерская Е.Ф. Шаповаловой) возведена в 
+честь подвига российских воинов в Великой Отечественной войне. В основании 
+здания заложены капсулы с землей из городов-героев и мест, где проходили главные 
+сражения Великой Отечественной войны.</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<DIV></DIV><!-- Памятник "спасибо за счастливое детство"-->
+<A id=win9 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class=img1 border=0 alt="" align=left src="images/6.jpg" width=300 height=200>
+<p class="pp">Памятник "спасибо за счастливое детство"<br>Московское ш., д. 44</P>
+<p>В 2015 году был установлен памятник, посвящённый 
+работникам Крыловского государственного научного центра, которые погибли в 
+Великую Отечественную войну.</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+<DIV></DIV><!-- Площадь Победы-->
+<A id=win10 class=overlay href="#x"></A>
+<div class="popup">
+<IMG class=img1 border=0 alt="" align=left src="images/7.jpg" width=300 height=198>
+<p class="pp">Монумент Героическим защитникам Ленинграда на 
+площади Победы</P>
+<p>Монумент Защитникам Ленинграда возведен в память о 
+подвиге горожан во время Великой Отечественной войны. Композиция расположена на 
+площади Победы, в том месте, где в годы войны находилась фронтовая дорога, и был 
+создан мощный узел сопротивления врагу – с дотами и стальными ежами, 
+противотанковыми заграждениями и артиллерийским орудием.</P>
+<p>Монумент Защитникам Ленинграда состоит из наземной и 
+подземной части.</P>
+<p>Внешняя архитектурно-скульптурная композиция, включающая стелу со скульптурной группой «Победители» (рабочий и солдат) у подножья и расходящимися от символического центра пьедесталами с многофигурными скульптурными композициями «Солдаты», «Лётчики и моряки», «Трудовой фронт», «На окопах», «Ополченцы», «Народные мстители (снайперы)»;
+<p>Расположенный под землёй Памятный зал (музей), украшен
+двумя мозаиками — «Блокада» и «Победа»</P>
+<p>Внутренняя (нижняя) мемориальная площадь со скульптурной группой «Блокада» (скульптор М. К. Аникушин), ограниченная разорванным кольцом 
+(символ блокады Ленинграда), на котором горят вечные огни в виде факелов в 
+память о подвиге минувших дней.</P>
+<A title=Закрыть class=close href="#close" ></A></DIV>
+  </body>
+</html>
+
